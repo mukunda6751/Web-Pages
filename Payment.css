@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  text-decoration-color: #fff;
+  margin: 15px 30px;
+  margin-bottom: 30px;
+  padding: 15px 30px;
+  border: #fff solid;
+  border-radius: 4px;
+}
+
+.creative-header {
+  background: inherit;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.creative-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(-50%) rotate(45deg);
+  z-index: 1;
+}
+
+.header-title {
+  position: relative;
+  z-index: 2;
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  margin: 2% 1%;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #3e8e41;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="data"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+fieldset {
+  background-color: #7b7b7b50;
+  border: 1px solid #ccc;
+}
+
+.button-Pay button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2cc1a8;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button-Pay button:hover {
+  background-color: #1fa7c3db;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}

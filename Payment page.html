@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Payment.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0"
+    aria-required="true"/>
+    <title>Payment Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="wallet_3258486.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="wallet_3258486.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="wallet_3258486.png">
+    <link rel="manifest" href="Payment.css">
+  </head>
+
+  <body aria-required="true" style="color: #e0ffff">
+    <div class="container">
+        <!-- Payment Form Section -->
+      <form action="" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        
+        <!-- Header & Nav bar -->
+        <header class="creative-header">
+          <h1 class="header-title">Payment Page</h1>
+        </header>
+        <nav class="nav">
+          <div class="button-group">
+            <a href="#"><button>About</button></a>
+            <a href="#"><button>Contact</button></a>
+            <a href="#"><button>FAQ</button></a>
+            <a href="#"><button>Terms & conditions</button></a>
+            <a href="#"><button>Home</button></a>
+          </div>
+        </nav>
+        <hr color=" #fff" size="5px" >
+        <br />
+        <!-- Form Containt -->
+
+        <p style="color: red; border: 0.5px; font-size: small; margin-top: 0%">
+          - Pls fill the required (*) info first
+        </p>
+        <h2>Contact Info</h2>
+        <p>
+          Name : *<input
+            type="text"
+            name="Name"
+            id="Name"
+            placeholder="First Middle Last"
+            required
+          >
+        </p>
+        <fieldset>
+          <legend>Gender *</legend>
+          <p>
+            <input type="radio" name="Gender" id="male" required />Male
+            <input type="radio" name="Gender" id="female" required />female
+          </p>
+        </fieldset>
+        <p>
+          <label for="Address">Address :</label>
+          <textarea name="Address" id="Address" rows="4" cols="100"></textarea>
+        </p>
+        <p>
+          Pincode : *
+          <input
+            type="number"
+            name="Pincode"
+            id="Pincode"
+            placeholder="123456"
+            required
+          >
+        </p>
+        <p>
+          Email : *<input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="yourmailid@gamil.com"
+            required
+          >
+        </p>
+        <hr size="5px" >
+        <br>
+
+        <h2>Payment Info</h2>
+        <hr size="5px" >
+        <p>
+          Card Type : *
+          <select
+            name="card"
+            id="card"
+            placeholder="1111-2222-3333-4444"
+            required
+          >
+            <option value="">--Select a Card Type--</option>
+            <option value="Visa">Visa</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Master Card">Master Card</option>
+          </select>
+        </p>
+        <p>
+          Card Number : *
+          <input
+            type="text"
+            name="Card number"
+            id="Card number"
+            placeholder="0000-0000-0000-0000"
+            required
+          >
+        </p>
+        <p>
+          Expiration Date : *
+          <input
+            type="date"
+            name="Expiration date"
+            id="Expiration date"
+            required
+          >
+        </p>
+        <p>
+          CVV : *
+          <input
+            type="password"
+            name="CVV"
+            id="CVV"
+            placeholder="123"
+            required
+          >
+        </p>
+
+        <div class="button-Pay">
+          <a href="#"><button>Pay now</button></a>
+        </div>
+
+        <!-- Footer section -->
+        <div class="footer">
+          <p>
+            &copy; 2022 Your Company Name. All rights reserved. |
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
